@@ -1,0 +1,14 @@
+<h1 class="text-4xl font-bold"><%=@project.name %>
+
+<div class="flex gap-5">
+  <% @project.lists.each do |list| %>
+    <div>
+      <h2><%=list.name %></h2>
+    </div>
+  <% end %>
+
+  <div>
+    <%= link_to 'New List', new_project_list_path(@project) %>
+  </div>  
+
+</div>

@@ -54,6 +54,8 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "ruby-lsp", "~> 0.19.1"
+
 end
 
 group :test do
@@ -63,3 +65,4 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 2.7"
+

@@ -1,0 +1,7 @@
+<%= form_with model: project do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%>
+
+  <%= f.submit "Save", class: 'px-4 py-2 bg-sky-400 cursor-pointer hover:bg-sky-700'%>
+
+<% end %>
