@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :projects do
     scope module: :projects do
-      resources :lists
+      resources :lists do
+        scope module: :lists do
+          resources :cards
+        end
+      end
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
